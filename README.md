@@ -30,7 +30,7 @@ flight-price-prediction/
 │   └── flight.html        # Frontend HTML (Bootstrap + Styling)
 │
 └── static/
-    └── style.css (optional) # You used inline CSS in flight.html
+    └── style.css (optional) # We have used inline CSS in flight.html
 ```
 
 ---
@@ -67,7 +67,7 @@ Your dataset contains categorical numerical encodings:
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/flight-price-prediction.git
+git clone https://github.com/lovnishverma/flight-price-prediction.git
 cd flight-price-prediction
 ```
 

@@ -12,8 +12,8 @@ This project demonstrates:
 
 ## 🚀 Live Demo
 
-*(Optional: Add if hosted, otherwise remove this section)*
-[https://your-live-demo-link.com](#)
+*(hosted on render)*
+[https://flight-price-prediction-8wup.onrender.com/](#)
 
 ---
 

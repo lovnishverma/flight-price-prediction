@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Fare Prediction</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+         background-image: url("https://media.giphy.com/media/l3q2QrYMvRPyhYvXa/giphy-downsized-large.gif");
+      background-size: 100% 100%;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        label {
+            font-weight: bold;
+        }
+        select {
+            width: 100%;
+            padding: 6px 12px;
+            font-size: 14px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flight Fare Prediction</h1>
+
+    <form action="/flight" method="POST">
+        <div class="form-group">
+            <label for="airline">Airline:</label>
+            <select class="form-control" id="airline" name="airline">
+                <option value="1">SpiceJet</option>
+                <option value="2">AirAsia</option>
+                <option value="3">Vistara</option>
+                <option value="4">Air_India</option>
+                <option value="5">Indigo</option>
+                <option value="6">GO_FIRST</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="source_city">Source City:</label>
+            <select class="form-control" id="source_city" name="source_city">
+                <option value="1">Delhi</option>
+                <option value="2">Mumbai</option>
+                <option value="3">Bangalore</option>
+                <option value="4">Kolkata</option>
+                <option value="5">Hyderabad</option>
+                <option value="6">Chennai</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="departure_time">Departure Time:</label>
+            <select class="form-control" id="departure_time" name="departure_time">
+                <option value="1">Evening</option>
+                <option value="2">Early_Morning</option>
+                <option value="3">Morning</option>
+                <option value="4">Afternoon</option>
+                <option value="5">Night</option>
+                <option value="6">Late_Night</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="stops">Stops:</label>
+            <select class="form-control" id="stops" name="stops">
+                <option value="1">zero</option>
+                <option value="2">one</option>
+                <option value="3">two_or_more</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="arrival_time">Arrival Time:</label>
+            <select class="form-control" id="arrival_time" name="arrival_time">
+                <option value="1">Night</option>
+                <option value="2">Morning</option>
+                <option value="3">Early_Morning</option>
+                <option value="4">Afternoon</option>
+                <option value="5">Late_Night</option>
+                <option value="6">Evening</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="destination_city">Destination City:</label>
+            <select class="form-control" id="destination_city" name="destination_city">
+                <option value="1">Delhi</option>
+                <option value="2">Mumbai</option>
+                <option value="3">Kolkata</option>
+                <option value="4">Bangalore</option>
+                <option value="5">Hyderabad</option>
+                <option value="6">Chennai</option>
+            </select>
+        </div>
+
+      <div class="form-group">
+            <label for="classs">CLASS:</label>
+            <select class="form-control" id="classs" name="classs">
+                <option value="1">Economy</option>
+                <option value="2">Business</option>
+            </select>
+        </div>
+      
+        <input class="btn btn-primary" type="submit" value="Submit">
+    </form>
+
+    <h2>The expected fare of your Flight is approx: Rs {{result}} -/ only</h2>
+
+</body>
+</html>
